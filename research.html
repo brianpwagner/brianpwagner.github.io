@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research & IP | Brian Wagner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">B<span class="dot">.</span>W</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="research.html" class="active">Research & IP</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <ul class="nav-mobile" id="mobileMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="research.html">Research & IP</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="page-eyebrow">Publications, Patents & Intellectual Property</p>
+      <h1>Research & IP</h1>
+      <p class="page-sub">15 US Patents &nbsp;|&nbsp; 1 EP Patent &nbsp;|&nbsp; 2 Pending &nbsp;|&nbsp; 3 Classified &nbsp;|&nbsp; 121 IP Disclosures &nbsp;|&nbsp; 62 Publications</p>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <button class="filter-btn active" onclick="filterCat('all', this)">All</button>
+      <button class="filter-btn" onclick="filterCat('patents', this)">Patents</button>
+      <button class="filter-btn" onclick="filterCat('scm', this)">Superconducting & RF</button>
+      <button class="filter-btn" onclick="filterCat('wbg', this)">Wide Bandgap & SiC</button>
+      <button class="filter-btn" onclick="filterCat('optics', this)">Optics & Crystals</button>
+      <button class="filter-btn" onclick="filterCat('det', this)">Detectors & Other</button>
+    </div>
+  </div>
+
+  <main class="page-main">
+    <div class="page-inner">
+
+      <!-- RESEARCH AREAS -->
+      <section class="research-summary">
+        <h2 class="section-h2">Research Areas</h2>
+        <div class="res-area-grid">
+          <div class="res-area-card">
+            <h3>Superconducting Microelectronics</h3>
+            <p>Dielectric film development, superconducting resonator integration, and materials characterization for SCE logic technologies. Foundational work supporting Nb-based superconductor devices and qubit fabrication.</p>
+          </div>
+          <div class="res-area-card">
+            <h3>Phase-Change RF Switches</h3>
+            <p>World-record chalcogenide-based RF switching technology (GeTe) achieving 15 THz cutoff frequency. Enabled reconfigurable defense Tx/Rx systems, antennas, and filters.</p>
+          </div>
+          <div class="res-area-card">
+            <h3>Wide Bandgap Semiconductors</h3>
+            <p>Growth and characterization of GaN, AlN, SiC, and solid-solution (SiC)x(AlN)1-x materials. Pioneering work in non-polar GaN via pendeo-epitaxy for high-power and high-frequency devices.</p>
+          </div>
+          <div class="res-area-card">
+            <h3>Acousto-Optic & Nonlinear Optics</h3>
+            <p>Crystal growth and device development for acousto-optic tunable filters and nonlinear optical materials including orientation-patterned ZnSe and selenide compounds for MWIR/LWIR applications.</p>
+          </div>
+          <div class="res-area-card">
+            <h3>Radiation & IR Detectors</h3>
+            <p>Novel semiconductor materials for room-temperature gamma-ray detection (DHS/DNDO sponsored), PbSe thin-film IR detectors, and nano avalanche photodiode architectures for single-photon detection.</p>
+          </div>
+          <div class="res-area-card">
+            <h3>Crystal Growth & Thin Films</h3>
+            <p>Physical vapor transport (PVT) growth of SiC, CVD of 3C-SiC on Si, PbSe thin films, and germanium/silicon thin-film dielectrics for quantum computing and advanced semiconductor applications.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PATENTS -->
+      <section class="pub-section" data-cat="patents">
+        <h2 class="section-h2">US & European Patents</h2>
+        <p class="section-note">15 US Patents Issued &nbsp;|&nbsp; 3 Classified/Restricted (not listed) &nbsp;|&nbsp; 2 Applications Pending &nbsp;|&nbsp; 1 EP Patent — All links open Google Patents</p>
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <span class="pub-num">[P15]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US10985059" target="_blank" class="pub-title">Preclean and dielectric deposition methodology for superconductor interconnect fabrication</a>
+              <span class="pub-meta">B.P. Wagner, C.F. Kirby, M. Rennie, J.T. Kelliher, K. Lim &nbsp;—&nbsp; US Patent 10,985,059 &nbsp;—&nbsp; 2021</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P17]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US10629767" target="_blank" class="pub-title">Nano avalanche photodiode architecture for photon detection</a>
+              <span class="pub-meta">N.B. Singh, J.V. Veliadis, B. Nechay, A. Berghmans, D.J. Knuteson, D. Kahler, B. Wagner, M. Sherwin &nbsp;—&nbsp; US Patent 10,629,767 &nbsp;—&nbsp; 2020</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P16]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US10211359" target="_blank" class="pub-title">Nano avalanche photodiode architecture for photon detection</a>
+              <span class="pub-meta">N.B. Singh, J.V. Veliadis, B. Nechay, A. Berghmans, D.J. Knuteson, D. Kahler, B. Wagner, M. Sherwin &nbsp;—&nbsp; US Patent 10,211,359 &nbsp;—&nbsp; 2019</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P14]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US10276504" target="_blank" class="pub-title">Preclean and deposition methodology for superconductor interconnects</a>
+              <span class="pub-meta">V. Luu, C.F. Kirby, B. Wagner, M. Rennie &nbsp;—&nbsp; US Patent 10,276,504 &nbsp;—&nbsp; 2019</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P13]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US9653398" target="_blank" class="pub-title">Non-oxide based dielectrics for superconductor devices</a>
+              <span class="pub-meta">J.T. Kelliher, S.J. Di Giacomo, C.E. Sherman, B.P. Wagner &nbsp;—&nbsp; US Patent 9,653,398 &nbsp;—&nbsp; 2017</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P11]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US9570646" target="_blank" class="pub-title">Nano avalanche photodiode architecture for photon detection</a>
+              <span class="pub-meta">N.B. Singh, J.V. Veliadis, B. Nechay, A. Berghmans, D.J. Knuteson, D. Kahler, B. Wagner, M. Sherwin &nbsp;—&nbsp; US Patent 9,570,646 &nbsp;—&nbsp; 2017</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P12]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US9257647" target="_blank" class="pub-title">Phase change material switch and method of making the same</a>
+              <span class="pub-meta">P. Borodulin, N. El-Hinnawy, R.M. Young, R.S. Howell, J.R. Mason Jr., B.P. Wagner, M.R. King, E.B. Jones, M.J. Lee, M.E. Sherwin &nbsp;—&nbsp; US Patent 9,257,647 &nbsp;—&nbsp; 2016</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P10]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US8278666" target="_blank" class="pub-title">Method and apparatus for growing high purity 2H-silicon carbide</a>
+              <span class="pub-meta">N.B. Singh, S.R. McLaughlin, T.J. Knight, R.M. Young, B.P. Wagner, D.A. Kahler, A.E. Berghmans, D.J. Knuteson, T.R. McNutt, J.W. Hedrick Jr. &nbsp;—&nbsp; US Patent 8,278,666 &nbsp;—&nbsp; 2012</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P9]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US7888248" target="_blank" class="pub-title">Method of producing large area SiC substrates</a>
+              <span class="pub-meta">N.B. Singh, B.P. Wagner, D.J. Knuteson, D.A. Kahler, A.E. Berghmans, M.E. Aumer, J.W. Hedrick, M.E. Sherwin, M.M. Fitelson, M.S. Usefara &nbsp;—&nbsp; US Patent 7,888,248 &nbsp;—&nbsp; 2011</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P8]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US7683400" target="_blank" class="pub-title">Semiconductor heterojunction devices based on SiC</a>
+              <span class="pub-meta">N.B. Singh, B.P. Wagner, D.J. Knuteson, M.E. Aumer, A. Berghmans, D. Thomson, D. Kahler &nbsp;—&nbsp; US Patent 7,683,400 &nbsp;—&nbsp; 2010</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P5]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US7855108" target="_blank" class="pub-title">Semiconductor heterojunction devices based on SiC</a>
+              <span class="pub-meta">N.B. Singh, B.P. Wagner, D.J. Knuteson, M.E. Aumer, A. Berghmans, D. Thomson, D. Kahler &nbsp;—&nbsp; US Patent 7,855,108 &nbsp;—&nbsp; 2010</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P6]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US7737534" target="_blank" class="pub-title">Semiconductor devices that include germanium nanofilm layer disposed within openings of silicon dioxide layer</a>
+              <span class="pub-meta">S.R. McLaughlin, N.B. Singh, B. Wagner, A. Berghmans, D.J. Knuteson, D. Kahler, A.A. Margarella &nbsp;—&nbsp; US Patent 7,737,534 &nbsp;—&nbsp; 2010</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P4]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US7830644" target="_blank" class="pub-title">High dielectric capacitor materials and method of their production</a>
+              <span class="pub-meta">N.B. Singh, J. Talvacchio, M. Sherwin, A. Berghmans, D.J. Knuteson, D. Kahler, B. Wagner, J.D. Adam &nbsp;—&nbsp; US Patent 7,830,644 &nbsp;—&nbsp; 2010</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P7]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US7525099" target="_blank" class="pub-title">Nuclear radiation detection system</a>
+              <span class="pub-meta">N.B. Singh, N.A. Pesetski, A. Berghmans, B.P. Wagner, D. Kahler, D.J. Knuteson, D. Thomson &nbsp;—&nbsp; US Patent 7,525,099 &nbsp;—&nbsp; 2009</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P2]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US7371282" target="_blank" class="pub-title">Solid solution wide bandgap semiconductor materials</a>
+              <span class="pub-meta">N.B. Singh, B. Wagner, M. Aumer, D. Thomson, D. Kahler, A. Berghmans, D. Knuteson &nbsp;—&nbsp; US Patent 7,371,282 &nbsp;—&nbsp; 2008</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P18]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/EP2047013" target="_blank" class="pub-title">Wide bandgap semiconductor materials</a>
+              <span class="pub-meta">N.B. Singh, B. Wagner, M. Aumer, D. Thomson, D. Kahler, A. Berghmans, D. Knuteson &nbsp;—&nbsp; EP Patent 2,047,013 &nbsp;—&nbsp; 2009</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P1]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US20090302388" target="_blank" class="pub-title">Method for the selective deposition of germanium nanofilm on a silicon substrate and semiconductor devices made therefrom</a>
+              <span class="pub-meta">S.R. McLaughlin, N.B. Singh, B. Wagner, A. Berghmans, D.J. Knuteson, D. Kahler, A.A. Margarella &nbsp;—&nbsp; US Application 12/136,193 &nbsp;—&nbsp; 2009</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[P3]</span>
+            <div class="pub-content">
+              <a href="https://patents.google.com/patent/US20090218566" target="_blank" class="pub-title">Method and apparatus for growth of high purity 6H-SiC single crystal</a>
+              <span class="pub-meta">B. Wagner, T.J. Randall, T.J. Knight, D.J. Knuteson, D. Kahler, A.E. Berghmans, S.R. McLaughlin, N.B. Singh, M. Usefara &nbsp;—&nbsp; US Application 12/040,785 &nbsp;—&nbsp; 2009</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SUPERCONDUCTING & RF -->
+      <section class="pub-section" data-cat="scm">
+        <h2 class="section-h2">Superconducting Microelectronics & RF Switches</h2>
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <span class="pub-num">[35]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1063/5.0041525" target="_blank" class="pub-title">Low microwave loss in deposited Si and Ge thin-film dielectrics at single-photon power and low temperatures</a>
+              <span class="pub-meta">C.J. Kopas, J. Gonzales, S. Zhang, D.R. Queen, B. Wagner, M. Robinson, J. Huffman, N. Newman &nbsp;—&nbsp; AIP Advances, 11(9), 2021</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[36]</span>
+            <div class="pub-content">
+              <a href="https://arxiv.org/abs/2104.12580" target="_blank" class="pub-title">Ge thin-films with tantalum diffusion-barriers for use in Nb-based superconductor technology</a>
+              <span class="pub-meta">C. Kopas, S. Zhang, J. Gonzales, D.R. Queen, B. Wagner, R.W. Carpenter, N. Newman &nbsp;—&nbsp; arXiv:2104.12580, 2021</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[34]</span>
+            <div class="pub-content">
+              <a href="https://arxiv.org/abs/2011.08359" target="_blank" class="pub-title">Characterization of the chemical and electrical properties of defects at the niobium-silicon interface</a>
+              <span class="pub-meta">C. Kopas, M.K. Murthy, C. Gregory, B. Ibarra Mercado, D.R. Queen, B. Wagner, N. Newman &nbsp;—&nbsp; arXiv:2011.08359, 2020</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[33]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1063/1.4962953" target="_blank" class="pub-title">In-situ electron paramagnetic resonance studies of paramagnetic point defects in superconducting microwave resonators</a>
+              <span class="pub-meta">S. Zhang, C. Kopas, B. Wagner, D. Queen, N. Newman &nbsp;—&nbsp; Applied Physics Letters, 109(12), 122602, 2016</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[32]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1109/MWSYM.2016.7540360" target="_blank" class="pub-title">Substrate agnostic monolithic integration of the inline phase-change switch technology</a>
+              <span class="pub-meta">N. El-Hinnawy, P. Borodulin, A. Ezis, C. Furrow, C. Padilla, M. King, E. Jones, B. Wagner, et al. &nbsp;—&nbsp; 2016 IEEE MTT-S IMS</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[31]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1063/1.4929890" target="_blank" class="pub-title">Morphological analysis of GeTe in inline phase change switches</a>
+              <span class="pub-meta">M.R. King, N. El-Hinnawy, M. Salmon, J. Gu, B.P. Wagner, E.B. Jones, P. Borodulin, R.S. Howell, D.T. Nichols, R.M. Young &nbsp;—&nbsp; Journal of Applied Physics, 118(9), 2015</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[29]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1109/CSICS.2014.6978522" target="_blank" class="pub-title">12.5 THz Fco GeTe Inline Phase-Change Switch Technology for Reconfigurable RF and Switching Applications</a>
+              <span class="pub-meta">N. El-Hinnawy, P. Borodulin, E.B. Jones, B.P. Wagner, M.R. King, J.S. Mason, J. Bain, J. Paramesh, T.E. Schlesinger, et al. &nbsp;—&nbsp; 2014 IEEE CSICS</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[30]</span>
+            <div class="pub-content">
+              <a href="https://www.researchgate.net/publication/327520340_Improvements_in_GeTe-based_Phase_Change_RF_Switches" target="_blank" class="pub-title">Improvements in GeTe-based inline phase-change switch technology for RF switching applications</a>
+              <span class="pub-meta">N. El-Hinnawy, P. Borodulin, E.B. Jones, B.P. Wagner, M.R. King, et al. &nbsp;—&nbsp; CS MANTECH Conference, 2014</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[27]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1063/1.4885388" target="_blank" class="pub-title">Low-loss latching microwave switch using thermally pulsed non-volatile chalcogenide phase change materials</a>
+              <span class="pub-meta">N. El-Hinnawy, P. Borodulin, B.P. Wagner, M.R. King, E.B. Jones, R.S. Howell, M.J. Lee, R.M. Young &nbsp;—&nbsp; Applied Physics Letters, 105(1), 013501, 2014</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[28]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1063/1.4891239" target="_blank" class="pub-title">Thermal analysis of an indirectly heat pulsed non-volatile phase change material microwave switch</a>
+              <span class="pub-meta">R.M. Young, N. El-Hinnawy, P. Borodulin, B.P. Wagner, M.R. King, E.B. Jones, R.S. Howell, M.J. Lee &nbsp;—&nbsp; Journal of Applied Physics, 116(5), 054504, 2014</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[26]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1116/1.4886404" target="_blank" class="pub-title">Development of cap-free sputtered GeTe films for inline phase change switch based RF circuits</a>
+              <span class="pub-meta">M.R. King, B.P. Wagner, E.B. Jones, N. El-Hinnawy, P. Borodulin, S.R. McLaughlin, J.S. Mason, R.S. Howell, M.J. Lee, R.M. Young &nbsp;—&nbsp; Journal of Vacuum Science & Technology B, 32(4), 2014</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[25]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1109/CSICS.2013.6659554" target="_blank" class="pub-title">A 7.3 THz cut-off frequency, inline, chalcogenide phase-change RF switch using an independent resistive heater for thermal actuation</a>
+              <span class="pub-meta">N. El-Hinnawy, P. Borodulin, B.P. Wagner, M.R. King, J.S. Mason, E.B. Jones, V. Veliadis, R.S. Howell, R.M. Young, M.J. Lee &nbsp;—&nbsp; 2013 IEEE CSICS</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[24]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1109/LED.2013.2278816" target="_blank" class="pub-title">A four-terminal, inline, chalcogenide phase-change RF switch using an independent resistive heater for thermal actuation</a>
+              <span class="pub-meta">N. El-Hinnawy, P. Borodulin, B. Wagner, M.R. King, J.S. Mason, E.B. Jones, S. McLaughlin, V. Veliadis, M. Snook, M.E. Sherwin &nbsp;—&nbsp; IEEE Electron Device Letters, 34(10), 1313–1315, 2013</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- WIDE BANDGAP -->
+      <section class="pub-section" data-cat="wbg">
+        <h2 class="section-h2">Wide Bandgap Semiconductors & SiC</h2>
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <span class="pub-num">[1]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1103/PhysRevB.71.235334" target="_blank" class="pub-title">Structural TEM study of nonpolar a-plane gallium nitride grown on (1120) 4H-SiC by organometallic vapor phase epitaxy</a>
+              <span class="pub-meta">D.N. Zakharov, Z. Liliental-Weber, B. Wagner, Z.J. Reitmeier, E.A. Preble, R.F. Davis &nbsp;—&nbsp; Physical Review B, 71(23), 235334, 2005</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[2]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1016/j.jcrysgro.2005.12.120" target="_blank" class="pub-title">Growth and characterization of pendeo-epitaxial GaN (1120) on 4H-SiC (1120) substrates</a>
+              <span class="pub-meta">B.P. Wagner, Z.J. Reitmeier, J.S. Park, D. Bachelor, D.N. Zakharov, Z. Liliental-Weber, R.F. Davis &nbsp;—&nbsp; Journal of Crystal Growth, 290(2), 504–512, 2006</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[3]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1016/j.jcrysgro.2006.11.042" target="_blank" class="pub-title">Growth evolution and pendeo-epitaxy of non-polar AlN and GaN thin films on 4H-SiC (1120)</a>
+              <span class="pub-meta">S.M. Bishop, J.S. Park, J. Gu, B.P. Wagner, Z.J. Reitmeier, D.A. Batchelor, D.N. Zakharov, Z. Liliental-Weber, R.F. Davis &nbsp;—&nbsp; Journal of Crystal Growth, 300(1), 83–89, 2007</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[4]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1116/1.1823554" target="_blank" class="pub-title">Preparation and characterization of atomically clean, stoichiometric surfaces of AlN (0001)</a>
+              <span class="pub-meta">W.J. Mecouch, B.P. Wagner, Z.J. Reitmeier, R.F. Davis, C. Pandarinath, B.J. Rodriguez, R.J. Nemanich &nbsp;—&nbsp; Journal of Vacuum Science & Technology A, 23(1), 72–77, 2005</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[8]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1007/s11664-007-0364-5" target="_blank" class="pub-title">Morphology of thick SiC epitaxial films grown by the physical vapor transport method</a>
+              <span class="pub-meta">B.P. Wagner, N.B. Singh, A. Berghmans, D.J. Knuteson, D. Kahler, S. McLaughlin, J. Hawkins, J. Golombeck &nbsp;—&nbsp; Journal of Electronic Materials, 37(4), 379–383, 2008</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[10]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1021/cg1003865" target="_blank" class="pub-title">(SiC)x(AlN)1-x solid-solution substrate for high temperature and high power devices</a>
+              <span class="pub-meta">N.B. Singh, B. Wagner, A. Berghmans, D.J. Knuteson, S. McLaughlin, D. Kahler, D. Thomson, M. King &nbsp;—&nbsp; Crystal Growth & Design, 10(8), 3508–3514, 2010</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[37]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.4028/www.scientific.net/MSF.717-720.185" target="_blank" class="pub-title">Low temperature epitaxy of 3C SiC using hexamethyldisilane precursor on Si&lt;111&gt; substrates</a>
+              <span class="pub-meta">B. Wagner, J.D. Oliver, N.B. Singh, M. King, S. McLaughlin, D. Kahler, D. Knuteson, A. Berghmans, R. Rai &nbsp;—&nbsp; Materials Science Forum, 717, 185–188, 2012</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[42]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1002/crat.200900360" target="_blank" class="pub-title">Effect of AlN doping on the growth morphology of SiC</a>
+              <span class="pub-meta">N.B. Singh, J. Jones, E. Berghmans, B.P. Wagner, E. Jelen, S. McLaughlin, D.J. Knuteson, M. Fitelson, M. King, D. Kahler &nbsp;—&nbsp; Crystal Research and Technology, 44(9), 903–907, 2009</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[38]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1149/1.2214745" target="_blank" class="pub-title">PVT growth at high temperatures</a>
+              <span class="pub-meta">N.B. Singh, B. Wagner, M. Sherwin, A. Berghmans, D. Thomson, D. Kahler, D. Knuteson &nbsp;—&nbsp; Electrochemical Society Transactions, 2(5), 37–48, 2006</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[49]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1557/PROC-798-Y5.28" target="_blank" class="pub-title">Microstructure of nonpolar a-plane GaN grown on (1120) 4H-SiC investigated by TEM</a>
+              <span class="pub-meta">D.N. Zakharov, Z. Liliental-Weber, B. Wagner, Z.J. Reitmeier, E.A. Preble, R.F. Davis &nbsp;—&nbsp; MRS Online Proceedings Library, 798, Y5.28, 2003</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[50]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1557/PROC-864-E1.3" target="_blank" class="pub-title">Transmission electron microscopy study of nonpolar a-plane GaN grown by pendeo-epitaxy on (1120) 4H-SiC</a>
+              <span class="pub-meta">D.N. Zakharov, Z. Liliental-Weber, B. Wagner, Z.J. Reitmeier, E.A. Preble, R.F. Davis &nbsp;—&nbsp; MRS Online Proceedings Library, 864(1), 414, 2004</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[51]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1557/PROC-798-Y10.34" target="_blank" class="pub-title">Growth and characterization of epitaxial GaN thin films on 4H-SiC (11.0) substrates</a>
+              <span class="pub-meta">B.P. Wagner, E.A. Preble, Z.J. Reitmeier, R.F. Davis, D.N. Zakharov, Z. Liliental-Weber &nbsp;—&nbsp; MRS Online Proceedings Library, 798, Y10.34, 2003</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[52]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.4028/www.scientific.net/MSF.457-460.221" target="_blank" class="pub-title">Growth of homoepitaxial films on 4H-SiC (11-20) and 8° off-axis 4H-SiC (0001) substrates and their characterization</a>
+              <span class="pub-meta">S.M. Bishop, E.A. Preble, C. Hallin, A. Henry, L. Storasta, H. Jacobsson, B.P. Wagner, Z.J. Reitmeier, E. Janzén, R.F. Davis &nbsp;—&nbsp; Materials Science Forum, 457, 221–224, 2004</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[53]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1557/PROC-815-J5.25" target="_blank" class="pub-title">Characterization and comparison of 4H-SiC (1120) and 4H-SiC (0001) 8° off-axis substrates and homoepitaxial films</a>
+              <span class="pub-meta">S.M. Bishop, E.A. Preble, Z.J. Reitmeier, B.P. Wagner, R.F. Davis, C. Hallin, A. Henry, L. Storasta, H. Jacobson, E. Janzén &nbsp;—&nbsp; MRS Online Proceedings Library, 815, J5.25, 2004</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[48]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.645946" target="_blank" class="pub-title">TEM studies of laterally overgrown GaN layers grown in polar and non-polar directions</a>
+              <span class="pub-meta">L. Liliental-Weber, D. Zakharov, B. Wagner, R.F. Davis &nbsp;—&nbsp; Proc. SPIE 6121, Gallium Nitride Materials and Devices, 612101, 2006</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- OPTICS & CRYSTALS -->
+      <section class="pub-section" data-cat="optics">
+        <h2 class="section-h2">Acousto-Optics, Nonlinear Optics & Crystal Growth</h2>
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <span class="pub-num">[5]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/1.2744369" target="_blank" class="pub-title">Crystal growth, fabrication, and design of mercurous bromide acousto-optic tunable filters</a>
+              <span class="pub-meta">D.J. Knuteson, N.B. Singh, M. Gottlieb, D. Suhre, N. Gupta, A. Berghmans, D.A. Kahler, B. Wagner, J. Hawkins &nbsp;—&nbsp; Optical Engineering, 46(6), 064001, 2007</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[6]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/1.2829819" target="_blank" class="pub-title">Operational characteristics of a long-wavelength IR multispectral imager based on an acousto-optic tunable filter</a>
+              <span class="pub-meta">N.B. Singh, D. Kahler, D.J. Knuteson, M. Gottlieb, D. Suhre, A. Berghmans, B. Wagner, S. McLaughlin, M. King, J. Hedrick &nbsp;—&nbsp; Optical Engineering, 47(1), 013201, 2008</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[7]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/1.3262623" target="_blank" class="pub-title">Optical probes of orientation-patterned ZnSe quasi-phase-matched devices</a>
+              <span class="pub-meta">G.S. Kanner, M.L. Marable, N.B. Singh, A. Berghmans, D. Kahler, B. Wagner, A. Lin, M.M. Fejer, J.S. Harris, K.L. Schepler &nbsp;—&nbsp; Optical Engineering, 48(11), 114201, 2009</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[9]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1016/j.jcrysgro.2008.12.027" target="_blank" class="pub-title">Effect of growth parameters on the morphology and resistivity of PbSe</a>
+              <span class="pub-meta">B. Wagner, N.B. Singh, S. McLaughlin, A. Berghmans, D. Kahler, D. Knuteson &nbsp;—&nbsp; Journal of Crystal Growth, 311(4), 1080–1086, 2009</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[13]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.893702" target="_blank" class="pub-title">Ternary and quaternary selenide crystals for nonlinear optical applications</a>
+              <span class="pub-meta">N.B. Singh, D.J. Knuteson, G. Kanner, A. Berghmans, K. Green, B. Wagner, D. Kahler, M. King, S. McLaughlin &nbsp;—&nbsp; Proc. SPIE 8120, Photonic Fiber and Crystal Devices V, 2011</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[15]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1680/emr.12.00003" target="_blank" class="pub-title">Selenides for nonlinear optical applications</a>
+              <span class="pub-meta">N.B. Singh, G. Kanner, M. Marable, A. Berghmans, D. Knuteson, D. Kahler, B. Wagner, M. King &nbsp;—&nbsp; Emerging Materials Research, 1(4), 185–200, 2012</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[16]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1016/j.jcrysgro.2010.01.037" target="_blank" class="pub-title">Quaternary AgGaGenSe2(n+1) crystals for NLO applications</a>
+              <span class="pub-meta">D.J. Knuteson, N.B. Singh, D. Kahler, B. Wagner, A. Berghmans, S. McLaughlin, E. Jelen, M. King &nbsp;—&nbsp; Journal of Crystal Growth, 312(8), 1114–1117, 2010</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[17]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.929640" target="_blank" class="pub-title">Nanomorphology of ZnSe on patterned substrate</a>
+              <span class="pub-meta">N.B. Singh, G. Kanner, K. Green, M. Marable, A. Berghmans, B. Wagner, D. Kahler, D.J. Knuteson, M. King, S. McLaughlin &nbsp;—&nbsp; Proc. SPIE 8497, Photonic Fiber and Crystal Devices VI, 2012</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[18]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1016/j.jcrysgro.2010.01.013" target="_blank" class="pub-title">Characteristics of thick ZnSe films on quasi-phase-matched (QPM) GaAs substrates</a>
+              <span class="pub-meta">N.B. Singh, G.S. Kanner, A. Berghmans, D. Kahler, B. Wagner, D.J. Knuteson, M. King, S. McLaughlin &nbsp;—&nbsp; Journal of Crystal Growth, 312(8), 1142–1145, 2010</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[12]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.796025" target="_blank" class="pub-title">High efficiency LWIR AOTF</a>
+              <span class="pub-meta">D. Kahler, N.B. Singh, M. Gottlieb, D. Suhre, P. Lucey, D.J. Knuteson, A. Berghmans, B. Wagner, S. McLaughlin &nbsp;—&nbsp; Proc. SPIE 7086, Imaging Spectrometry XIII, 2008</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[22]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1002/crat.201300132" target="_blank" class="pub-title">Modification of interface anisotropy and its effect on microstructural evolution during Ostwald ripening</a>
+              <span class="pub-meta">N.B. Singh, A. Berghmans, M. King, D. Knuteson, J. Talvacchio, D. Kahler, M. House, B. Schreib, B. Wagner, S. McLaughlin &nbsp;—&nbsp; Crystal Research and Technology, 48(11), 983–988, 2013</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[47]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.762584" target="_blank" class="pub-title">Optical probes of orientation-patterned ZnSe quasi-phase-matched devices</a>
+              <span class="pub-meta">G.S. Kanner, M.L. Marable, N.B. Singh, A. Berghmans, D. Kahler, B. Wagner, A. Lin, M.M. Fejer, J.S. Harris, K.L. Schepler &nbsp;—&nbsp; Proc. SPIE 6875, Nonlinear Frequency Generation VII, 2008</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[56]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.618437" target="_blank" class="pub-title">SHG experiments in GaSe crystals at high rep rates</a>
+              <span class="pub-meta">N.B. Singh, D. Marable, M. Jones, R.B. Green, K. Kanner, G. Fitelson, M. Fernelius, N.C. Hopkins, F.K. Berghmans, A. Knuteson &nbsp;—&nbsp; Proc. SPIE 5912, Nonlinear Optical Materials II, 2005</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[39]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.825901" target="_blank" class="pub-title">(SiC)x(AlN)1-x solid-solution grown by physical vapor transport (PVT) method</a>
+              <span class="pub-meta">N.B. Singh, B. Wagner, A. Berghmans, D.J. Knuteson, S. McLaughlin, D. Kahler, M. King, J. Hedrick, G.M. Bates &nbsp;—&nbsp; Proc. SPIE 7420, Photonic Fiber and Crystal Devices III, 2009</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- DETECTORS & OTHER -->
+      <section class="pub-section" data-cat="det">
+        <h2 class="section-h2">Detectors, Radiation Materials & Other</h2>
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <span class="pub-num">[19]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1016/j.nima.2011.01.036" target="_blank" class="pub-title">Performance of novel materials for radiation detection: Tl3AsSe3, TlGaSe2, and Tl4HgI6</a>
+              <span class="pub-meta">D. Kahler, N.B. Singh, M. Knuteson, A. Berghmans, B. Wagner, S. McLaughlin, M. King &nbsp;—&nbsp; Nuclear Instruments and Methods in Physics Research A, 652(1), 183–185, 2011</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[20]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1109/TNS.2009.2015162" target="_blank" class="pub-title">Novel quaternary semiconductor materials: growth and characterization</a>
+              <span class="pub-meta">N.B. Singh, D.J. Knuteson, A. Berghmans, K.F. Schoch, D. Kahler, B. Wagner, S. McLaughlin, T. McNutt &nbsp;—&nbsp; IEEE Transactions on Nuclear Science, 56(3), 813–818, 2009</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[11]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.825914" target="_blank" class="pub-title">Properties of layered crystals for radiation detectors: TlGaSe2 system</a>
+              <span class="pub-meta">D.J. Knuteson, N.B. Singh, D. Kahler, B. Wagner, A. Berghmans, S. McLaughlin, K. Schwartz &nbsp;—&nbsp; Proc. SPIE 7449, Hard X-Ray, Gamma-Ray, and Neutron Detector Physics XI, 2009</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[43]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.929555" target="_blank" class="pub-title">Growth of CZT using additionally zone-refined raw materials</a>
+              <span class="pub-meta">D.J. Knuteson, N.B. Singh, D. Berghmans, A. Kahler, B. Wagner, M. King, S. McLaughlin, A. Bolotnikov, R. James &nbsp;—&nbsp; Proc. SPIE 8507, Hard X-Ray, Gamma-Ray, and Neutron Detector Physics XIV, 2012</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[44]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.883726" target="_blank" class="pub-title">Nanowire-based photodetectors: growth and development of chalcogenide nanostructured detectors</a>
+              <span class="pub-meta">M.R. King, S.R. McLaughlin, D.A. Kahler, A.E. Berghmans, B.P. Wagner, D.J. Knuteson, M. Aziz, N.B. Singh &nbsp;—&nbsp; Proc. SPIE 8031, Micro- and Nanotechnology Sensors III, 2011</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[14]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.825919" target="_blank" class="pub-title">Infrared characteristics of magnetic iron oxide nanoparticles in a transparent matrix</a>
+              <span class="pub-meta">D.J. Knuteson, N.B. Singh, D. Kahler, A. Berghmans, B. Wagner, S. McLaughlin, E. Jelen, M. King &nbsp;—&nbsp; Proc. SPIE 7420, Photonic Fiber and Crystal Devices III, 2009</span>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <span class="pub-num">[45]</span>
+            <div class="pub-content">
+              <a href="https://doi.org/10.1117/12.720175" target="_blank" class="pub-title">Operational characteristics of LWIR AOTF based multispectral imager</a>
+              <span class="pub-meta">N.B. Singh, N. Kanner, G.S. Marable, M. Berghmans, A. Knuteson, D.J. Kahler, D. Wagner, B. King &nbsp;—&nbsp; Proc. SPIE 6554, Chemical and Biological Sensing VIII, 2007</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- THESIS -->
+      <section class="pub-section">
+        <h2 class="section-h2">Graduate Thesis</h2>
+        <div class="pub-list">
+          <div class="pub-item">
+            <span class="pub-num">[T1]</span>
+            <div class="pub-content">
+              <span class="pub-title-plain">Conventional and Pendeo-Epitaxial Growth of Non-Polar GaN (11-20) Thin Films on AlN/4H-SiC (11-20) Substrates and Their Characterization and Reduction in Defect Density</span>
+              <span class="pub-meta">B.P. Wagner &nbsp;—&nbsp; M.S. Thesis, North Carolina State University, 2005 &nbsp;—&nbsp; Advisor: Dr. R.F. Davis</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Brian Wagner</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="research.html">Research & IP</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-note">Linthicum Heights, MD &nbsp;|&nbsp; brianwags@protonmail.com</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    function filterCat(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.pub-section').forEach(sec => {
+        sec.style.display = (cat === 'all' || sec.dataset.cat === cat) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
